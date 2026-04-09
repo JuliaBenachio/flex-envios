@@ -112,6 +112,27 @@ const Hero = () => {
           <span>Cidades atendidas</span>
         </S.InfoItem>
       </S.InfoBar>
+      <S.InfoBarMobile>
+        <S.InfoItem>
+          <strong>+11 Milhões</strong>
+          <span>de envios por mês</span>
+        </S.InfoItem>
+
+        <S.InfoItem>
+          <strong>+3.500</strong>
+          <span>Unidades Operacionais</span>
+        </S.InfoItem>
+
+        <S.InfoItem>
+          <strong>+8.200</strong>
+          <span>Entregadores</span>
+        </S.InfoItem>
+
+        <S.InfoItem>
+          <strong>+1.552</strong>
+          <span>Cidades atendidas</span>
+        </S.InfoItem>
+      </S.InfoBarMobile>
     </>
   )
 }

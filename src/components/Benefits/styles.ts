@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breakpoints, cores } from '../../styles'
 
 export const Container = styled.div`
   display: flex;
@@ -42,6 +42,20 @@ export const Titulo = styled.div`
     color: ${cores.amareloPrincipal};
     margin: 1px 0;
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    h1 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
 `
 
 export const Imagem = styled.img`
@@ -60,6 +74,15 @@ export const BenefitsContainer = styled.div`
   gap: 60px;
   margin: 0 auto;
   padding: 0 40px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    padding: 0 20px;
+
+    img {
+      display: none;
+    }
+  }
 `
 
 export const Icone = styled.div`

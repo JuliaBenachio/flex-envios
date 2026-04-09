@@ -1,29 +1,32 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breakpoints, cores } from '../../styles'
 
 export const Container = styled.section`
   position: relative;
   width: 100%;
-  height: 60vh; /* 👈 responsivo por padrão */
+  height: 100%;
   min-height: 400px;
   max-height: 700px;
-  z-index: 1;
 
   top: 50px;
   overflow: hidden;
 
-  @media (min-width: 768px) {
-    height: 70vh;
+  @media (max-width: ${breakpoints.tablet}) {
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+    margin-top: 22px;
   }
 
-  @media (min-width: 1024px) {
-    height: 680px; /* desktop mantém o visual original */
+  @media (min-width: ${breakpoints.desktop}) {
+    height: 680px;
   }
 `
 
 export const Slide = styled.div`
   min-width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 export const Slider = styled.div`
@@ -36,11 +39,11 @@ export const Slider = styled.div`
 export const Img = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
 
+  object-fit: cover;
   object-position: center;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     object-position: top;
   }
 `
@@ -87,6 +90,10 @@ export const Dots = styled.div`
 
   display: flex;
   gap: 10px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: none;
+  }
 `
 export const Dot = styled.span<{ $active: boolean }>`
   width: 8px;
@@ -112,25 +119,37 @@ export const InfoBar = styled.div`
   width: 90%;
   max-width: 1100px;
 
-  margin: -60px auto 40px auto;
+  margin: -80px auto 40px auto;
 
   position: relative;
   z-index: 2;
 
   background-color: ${cores.branco};
   border-radius: 20px;
-  padding: 16px;
+  padding: 20px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
-  @media (min-width: 768px) {
+  @media (max-width: ${breakpoints.tablet}) {
+    display: none;
+  }
+`
+
+export const InfoBarMobile = styled(InfoBar)`
+  display: none;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-    margin: -80px auto 40px auto;
+    gap: 16px;
+    margin: 32px 0 0 0;
+    align-items: center;
+    font-size: 8px;
+    padding: 16px 20px;
   }
 `
 
@@ -142,7 +161,7 @@ export const InfoItem = styled.div`
   text-align: center;
 
   strong {
-    font-size: 16px;
+    font-size: 14px;
     color: #1d4ed8;
 
     @media (min-width: 768px) {
@@ -151,7 +170,7 @@ export const InfoItem = styled.div`
   }
 
   span {
-    font-size: 12px;
+    font-size: 10px;
     color: #6b7280;
 
     @media (min-width: 768px) {

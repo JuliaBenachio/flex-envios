@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     list-style: none;
+    overflow-x: hidden;
   }
 `
 

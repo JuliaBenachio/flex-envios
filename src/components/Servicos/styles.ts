@@ -4,12 +4,13 @@ import { breakpoints, cores } from '../../styles'
 export const Container = styled.section`
   padding: 60px 16px;
   background-color: ${cores.azulPrincipal};
+  margin: -16px auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.tablet}) {
     padding: 80px 24px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${breakpoints.desktop}) {
     padding: 100px 0;
   }
 `

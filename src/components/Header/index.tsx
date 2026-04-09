@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <S.Container>
+    <S.Container $aberto={isMenuOpen}>
       <S.Bar>
         <div>
           <S.Logo src={logo} alt="Logo" />

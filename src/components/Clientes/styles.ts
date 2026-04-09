@@ -27,7 +27,7 @@ export const ListaClientes = styled.ul`
   gap: 16px;
 
   list-style: none;
-  margin: 0;
+  margin: 0 10px;
   padding: 0;
 
   /* 📱 Tablet → 3 colunas */
