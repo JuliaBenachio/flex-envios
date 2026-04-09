@@ -14,7 +14,7 @@ export const Container = styled.section`
   @media (max-width: ${breakpoints.tablet}) {
     height: auto;
     min-height: auto;
-    overflow: visible;
+    overflow: hidden;
     margin-top: 22px;
   }
 
