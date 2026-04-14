@@ -12,10 +12,21 @@ function Home() {
     <>
       <Header />
       <Hero />
-      <Servicos />
-      <Benefits />
-      <Clientes />
+
+      <section id="servicos">
+        <Servicos />
+      </section>
+
+      <section id="vantagens">
+        <Benefits />
+      </section>
+
+      <section id="clientes">
+        <Clientes />
+      </section>
+
       <Footer />
+
       {/*
       <Contact />
       <Footer /> */}

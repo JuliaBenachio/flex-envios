@@ -4,6 +4,9 @@ import * as S from './styles'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const handleClick = () => {
+    setIsMenuOpen(false)
+  }
 
   return (
     <S.Container $aberto={isMenuOpen}>
@@ -22,16 +25,24 @@ const Header = () => {
 
         <S.MenuMobile $aberto={isMenuOpen}>
           <li>
-            <a href="#servicos">Serviços</a>
+            <a href="#servicos" onClick={handleClick}>
+              Serviços
+            </a>
           </li>
           <li>
-            <a href="#vantagens">Vantagens</a>
+            <a href="#vantagens" onClick={handleClick}>
+              Vantagens
+            </a>
           </li>
           <li>
-            <a href="#clientes">Clientes</a>
+            <a href="#clientes" onClick={handleClick}>
+              Clientes
+            </a>
           </li>
           <li>
-            <a href="#sobre">Sobre nós</a>
+            <a href="#sobre" onClick={handleClick}>
+              Sobre nós
+            </a>
           </li>
 
           <S.Divisor />

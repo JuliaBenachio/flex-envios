@@ -9,6 +9,21 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
     overflow-x: hidden;
   }
+
+  *{
+    scroll-behavior: smooth;
+
+  }
+
+  section {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 60px;
+  }
+}
 `
 
 export const cores = {
