@@ -4,6 +4,9 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Hero from '../../components/Hero'
 import Servicos from '../../components/Servicos'
+{
+  /*import Sobre from '../../components/Sobre'*/
+}
 // import Contact from '../../components/Contact'
 // import Footer from '../../components/Footer'
 
@@ -24,6 +27,8 @@ function Home() {
       <section id="clientes">
         <Clientes />
       </section>
+
+      <section id="sobre">{/*<Sobre />} */}</section>
 
       <Footer />
 
