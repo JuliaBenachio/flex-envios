@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 🚚 Flex Envios — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional desenvolvida para a **FlexEnvios**, empresa de logística onde atuo, com o objetivo de apresentar os serviços da empresa de forma clara, moderna e profissional.
 
-Currently, two official plugins are available:
+🔗 **[Acesse o projeto](https://flex-envios.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔍 Problema
 
-## React Compiler
+A empresa já possuía uma página institucional, porém o layout estava confuso e pouco profissional, transmitindo uma imagem que não condizia com a qualidade dos serviços oferecidos. Isso não fazia parte das minhas atribuições no momento, mas identifiquei a oportunidade de melhoria e me propus a resolvê-la.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✅ Solução
 
-## Expanding the ESLint configuration
+Refiz a landing page do zero, por iniciativa própria, com foco em um design mais limpo, organizado e que comunicasse melhor os serviços de logística da empresa, priorizando clareza visual e boa experiência para quem acessa a página.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React**
+- **TypeScript**
+- **Styled-components**
+- **Vite**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 👩‍💻 O que eu fiz
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Levantei os pontos de confusão do layout anterior
+- Planejei e estruturei a nova página, organizando as seções de forma mais intuitiva
+- Desenvolvi o front-end do zero com React, TypeScript e Styled-components
+- Garanti responsividade para acesso via desktop e mobile
+- Publiquei a aplicação em produção (Vercel)
+
+## 📈 Resultados
+
+- A empresa passou a ter uma página que representa melhor a marca, gerando a captação de mais clientes para o negócio.
+
+## 🚀 Como rodar o projeto
+
+```bash
+git clone https://github.com/JuliaBenachio/flex-envios.git
+cd flex-envios
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Autora
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[Julia Oliveira](https://github.com/JuliaBenachio) · [LinkedIn](https://linkedin.com/in/julia-benachio)
